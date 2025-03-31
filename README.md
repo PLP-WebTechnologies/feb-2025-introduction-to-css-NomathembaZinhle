@@ -1,29 +1,63 @@
-# Introduction to CSS
+//1. Create the style.css file
+/* style.css */
 
-## Objectives
-Link an external CSS file to an HTML document.
-Apply basic styling using selectors.
-Use colors, fonts, and spacing effectively.
+/* Apply styling to the body element */
+body {
+  font-family: Arial, sans-serif; /* Use a different font */
+  background-color: #f4f4f4; /* Set a light background color */
+  color: #333; /* Set text color */
+  margin: 0;
+  padding: 0;
+}
 
-## Instructions
+/* Style elements with the 'header' class */
+.header {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text color */
+  padding: 20px;
+  text-align: center;
+}
 
-Create a style.css file.
-Apply CSS to a HTML page.
-Style elements using:
-Classes and IDs.
-Color and typography.
-Margins, paddings, and borders.
+/* Style elements with the 'image' class */
+.image {
+  width: 100%; /* Make the image span full width */
+  max-width: 600px; /* Limit maximum width */
+  display: block; /* Ensure the image is a block-level element */
+  margin: 20px auto; /* Center the image horizontally */
+}
 
->[!NOTE]
->  - Include at least:
->  - Use of 3 selectors
->  - Style an image
->  - Margin, Padding & Borders
->  - Different font
+/* Style the element with the ID 'content' */
+#content {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #ccc; /* Add a border around the content */
+  background-color: #fff; /* Set the background color of the content section */
+}
+//2. Link the style.css file to your HTML document
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Styled Webpage</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Apply class 'header' to a div element -->
+    <div class="header">
+        <h1>Welcome to My Webpage</h1>
+    </div>
 
-# Tasks
- - Link an external CSS file.
- - Apply at least 3 different selectors.
- - Improve readability and aesthetics.
+    <!-- Apply class 'image' to an image element -->
+    <img src="https://via.placeholder.com/600" alt="Placeholder Image" class="image">
 
-Happy Coding! 💻✨
+    <!-- Apply ID 'content' to a section element -->
+    <div id="content">
+        <h2>About This Webpage</h2>
+        <p>This webpage demonstrates the use of CSS styling with external files. It includes elements styled with selectors like classes and IDs.</p>
+    </div>
+</body>
+</html>
+
+
